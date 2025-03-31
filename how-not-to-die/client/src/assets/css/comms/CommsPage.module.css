@@ -8,27 +8,37 @@
     min-height: 100vh;
   }
   
-  .controls {
-    margin-bottom: 1.5rem;
+  .threadList {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .threadButton {
+    background-color: black;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   
-  label {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #00ffee;
+  .threadButton:hover {
+    background-color: rgba(0, 255, 204, 0.1);
+    box-shadow: 0 0 10px #00ffcc;
   }
   
-  select {
-    background: black;
-    color: #00ffcc;
-    border: 1px solid #00ffcc;
-    padding: 6px 10px;
-    font-family: 'Orbitron', sans-serif;
-    border-radius: 4px;
-    font-size: 0.9rem;
+  .newBadge {
+    font-size: 0.85rem;
+    font-weight: bold;
   }
   
   .chatLog {

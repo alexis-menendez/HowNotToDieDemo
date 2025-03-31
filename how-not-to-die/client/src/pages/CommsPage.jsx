@@ -81,10 +81,14 @@ const CommsPage = () => {
       {!activeUser ? (
         <div className={styles.threadList}>
           {threads.map(thread => (
-            <div key={thread.username} className={styles.threadCard} onClick={() => handleSelectUser(thread.username)}>
-              <span className={styles.username}>{thread.username}</span>
-              {thread.hasNew && <span className={styles.newBadge}>🟢 NEW</span>}
-            </div>
+            <button
+              key={thread.username}
+              className={styles.threadButton}
+              onClick={() => handleSelectUser(thread.username)}
+            >
+              {thread.username}
+              {thread.hasNew && <span className={styles.newBadge}> 🟢 NEW</span>}
+            </button>
           ))}
         </div>
       ) : (
@@ -98,9 +102,15 @@ const CommsPage = () => {
             ))}
           </div>
 
-          <div className={styles.buttonRow}>
-            <button onClick={handleReturn}>← Return to Messages</button>
+          <div className={styles.inputRow}>
+            <input
+              type="text"
+              placeholder="Type your message..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
             <button onClick={handleSend}>Reply</button>
+            <button onClick={handleReturn}>← Return to Messages</button>
           </div>
         </div>
       )}

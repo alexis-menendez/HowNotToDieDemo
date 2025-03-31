@@ -1,0 +1,32 @@
+/* file path: how-not-to-die/src/assets/css/dashboard/Dashboard.module.css */
+/* Commander’s main panel page */
+
+/* Desktop styles */
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Tablet styles */
+  @media (max-width: 1024px) {
+    .dashboardContainer {
+      padding: 30px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Phone styles */
+  @media (max-width: 600px) {
+    .dashboardContainer {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    .dashboardContainer h2 {
+      font-size: 20px;
+    }
+  }
+  

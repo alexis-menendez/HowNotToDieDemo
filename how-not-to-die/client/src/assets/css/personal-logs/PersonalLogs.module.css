@@ -1,0 +1,157 @@
+/* file path: how-not-to-die/src/assets/css/personal-logs/PersonalLogs.module.css */
+/* 	View/edit user’s own logs */
+
+.container {
+    padding: 1rem;
+    padding-top: 4rem; 
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Courier New', monospace;
+    color: #00ffe1;
+    background-color: rgba(0, 255, 225, 0.03);
+    border: 1px solid #00ffe1;
+    border-radius: 12px;
+    justify-content: flex-start; 
+  }
+  
+  .logList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .logCard {
+    background-color: rgba(0, 255, 225, 0.05);
+    border: 1px solid #00ffe1;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .logCard h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #00ffe1;
+  }
+  
+  .logCard p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    color: #00ffe1;
+  }
+  
+  .logCard button {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    background-color: #00ffe1;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logCard button:hover {
+    background-color: #00cbb9;
+  }
+
+  .modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 255, 225, 0.70);
+    color: #000000;
+    padding: 2rem;
+    border: 1px solid #00ffe1;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    z-index: 9999;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 255, 225, 0.3);
+  }
+  
+  .modal h3 {
+    margin-top: 0;
+  }
+  
+  .modal input,
+  .modal textarea {
+    width: 100%;
+    background-color: black;
+    color: #00ffe1;
+    border: 1px solid #00ffe1;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', monospace;
+    border-radius: 4px;
+  }
+  
+  .modal button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #00ffe1;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #00cbb9;
+  }
+
+  .newLogButton {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00ffe1;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newLogButton:hover {
+    background-color: #00cbb9;
+  } 
+
+/* style changes for when on planet */
+  .planetMode {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00ffe1;
+    border: 1px solid #00ffe1;
+    box-shadow: 0 0 15px #00ffe1;
+    font-size: 2rem; 
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .planetInput {
+    background-color: #00ffe1;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.25rem;
+  }
+
+  .planetMode button {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  /* larger screens */
+  @media screen and (width: 2313px) {
+    .container {
+        padding-top: 20rem;  /* 🔧 Increase until it looks right */
+      }
+    }

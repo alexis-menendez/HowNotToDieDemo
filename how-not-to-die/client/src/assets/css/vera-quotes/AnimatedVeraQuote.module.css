@@ -1,0 +1,29 @@
+/* file path: /assets/css/dashboard/AnimatedVeraQuote.module.css */
+
+.veraWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  
+  .robot {
+    image-rendering: pixelated;
+    width: 100px;
+    height: auto;
+  }
+  
+  .quoteBox {
+    background-color: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffcc;
+  }
+  
+  .quote {
+    margin: 0;
+  }
+  

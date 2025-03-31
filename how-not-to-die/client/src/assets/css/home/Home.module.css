@@ -1,0 +1,142 @@
+/* file path: how-not-to-die/src/assets/css/home/Home.module.css */
+/* Login / Register console screen */
+
+/* Temporary placeholder styling */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .loginForm label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', monospace;
+    color: #00ffe1;
+  }
+  
+  .loginForm input {
+    padding: 0.5rem;
+    background-color: rgba(0, 255, 225, 0.05);
+    border: 1px solid #00ffe1;
+    color: #00ffe1;
+    font-family: 'Courier New', monospace;
+    border-radius: 4px;
+  }
+  
+  .loginForm button {
+    padding: 0.5rem;
+    background-color: #00ffe1;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .loginForm button:hover {
+    background-color: #00cbb9;
+  }
+
+  .loginHeading {
+    margin-bottom: 0.25rem;
+  }
+
+.registerPrompt {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: #00ffe1;
+  }
+  
+  .registerButton {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: transparent;
+    border: 1px solid #00ffe1;
+    color: #00ffe1;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .registerButton:hover {
+    background-color: rgba(0, 255, 225, 0.1);
+  }
+
+
+/* media queries */
+
+/* media queries for tablets */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .loginForm {
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+  
+    .loginForm label {
+      font-size: 0.95rem;
+    }
+  
+    .loginForm input {
+      font-size: 1rem;
+      padding: 0.45rem;
+    }
+  
+    .loginForm button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .registerPrompt {
+      font-size: 0.95rem;
+    }
+  
+    .registerButton {
+      font-size: 1rem;
+      padding: 0.4rem 0.9rem;
+    }
+  
+    .loginHeading {
+        font-size: 1.4rem;
+        margin-top: 1rem; /* ✅ Add this line */
+    }
+  }
+
+/* media queries for phones */
+@media screen and (max-width: 767px) {
+    .loginForm {
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+  
+    .loginForm label {
+      font-size: 0.85rem;
+    }
+  
+    .loginForm input {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    .loginForm button {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    .registerPrompt {
+      font-size: 0.85rem;
+    }
+  
+    .registerButton {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.75rem;
+    }
+  
+    .loginHeading {
+      font-size: 1.2rem;
+    }
+  }

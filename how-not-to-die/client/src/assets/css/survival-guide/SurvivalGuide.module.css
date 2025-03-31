@@ -1,0 +1,29 @@
+/* file path: how-not-to-die/src/assets/css/survival-guide/SurvivalGuide.module.css */
+  
+.pageContent .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 50rem; /* need to adjust, am too tired will fix later /Alexis */
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Courier New', monospace;
+  color: #00ffe1;
+  background-color: rgba(0, 255, 225, 0.03);
+  border: 1px solid #00ffe1;
+  border-radius: 12px;
+}
+
+.tips {
+  list-style-type: square;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.tips li {
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+  color: #00ffe1;
+}

@@ -14,35 +14,47 @@ const Navigation = () => {
       <Link
         to="/"
         className={`${styles.navButton} ${isActive('/') ? styles.active : ''}`}
-        >
+      >
         Sign In
         {isActive('/') && <span className={styles.star}> ✦</span>}
       </Link>
+
       <Link
         to="/dashboard"
         className={`${styles.navButton} ${isActive('/dashboard') ? styles.active : ''}`}
-        >
+      >
         Command Center
         {isActive('/dashboard') && <span className={styles.star}> ✦</span>}
       </Link>
+
       <Link
         to="/personallogs"
         className={`${styles.navButton} ${isActive('/personallogs') ? styles.active : ''}`}
-        >
+      >
         Personal Logs
         {isActive('/personallogs') && <span className={styles.star}> ✦</span>}
       </Link>
+
+      <Link
+        to="/publiclogvoting"
+        className={`${styles.navButton} ${isActive('/publiclogvoting') ? styles.active : ''}`}
+      >
+        Public Logs
+        {isActive('/publiclogvoting') && <span className={styles.star}> ✦</span>}
+      </Link>
+
       <Link
         to="/survivalguide"
         className={`${styles.navButton} ${isActive('/survivalguide') ? styles.active : ''}`}
-        >
+      >
         Survival Guide
         {isActive('/survivalguide') && <span className={styles.star}> ✦</span>}
       </Link>
+
       <Link
         to="/planettravel"
         className={`${styles.navButton} ${isActive('/planettravel') ? styles.active : ''}`}
-        >
+      >
         Galaxy Map
         {isActive('/planettravel') && <span className={styles.star}> ✦</span>}
       </Link>
@@ -51,4 +63,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-

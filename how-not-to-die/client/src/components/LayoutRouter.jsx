@@ -8,6 +8,7 @@ import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
 import SurvivalGuide from '../pages/SurvivalGuide';
 import PersonalLogs from '../pages/PersonalLogs';
+import PublicLogVoting from '../pages/PublicLogVoting';
 import PlanetTravel from '../pages/PlanetTravel';
 import Holomap from '../pages/Holomap';
 import TravelAnimation from '../pages/TravelAnimation';
@@ -47,6 +48,7 @@ const LayoutRouter = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/survivalguide" element={<SurvivalGuide />} />
             <Route path="/personallogs" element={<PersonalLogs />} />
+            <Route path="/publiclogvoting" element={<PublicLogVoting />} />
             <Route path="/planettravel" element={<PlanetTravel />} />
             <Route path="/shuttlebreak" element={<ShuttleBreak />} />
             <Route path="/lifesupport" element={<LifeSupport />} />

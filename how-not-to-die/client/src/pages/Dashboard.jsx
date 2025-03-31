@@ -10,7 +10,7 @@ const Dashboard = () => {
     <>
       <h2>Welcome, Commander</h2>
 
-      {/* Replace static VERA quote with animated one */}
+      {/* VERA animated quote */}
       <AnimatedVeraQuote quote={sampleQuote} />
     </>
   );

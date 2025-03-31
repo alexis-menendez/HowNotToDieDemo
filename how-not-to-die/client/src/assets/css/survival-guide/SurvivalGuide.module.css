@@ -27,3 +27,28 @@
   font-family: 'Courier New', monospace;
   color: #00ffe1;
 }
+
+.logButtons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logButton {
+  background-color: #00ffcc;
+  color: black;
+  padding: 10px 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.logButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #00ffee;
+}

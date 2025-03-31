@@ -28,19 +28,11 @@ const Navigation = () => {
       </Link>
 
       <Link
-        to="/personallogs"
-        className={`${styles.navButton} ${isActive('/personallogs') ? styles.active : ''}`}
+        to="/commspage"
+        className={`${styles.navButton} ${isActive('/commspage') ? styles.active : ''}`}
       >
-        Personal Logs
-        {isActive('/personallogs') && <span className={styles.star}> ✦</span>}
-      </Link>
-
-      <Link
-        to="/publiclogvoting"
-        className={`${styles.navButton} ${isActive('/publiclogvoting') ? styles.active : ''}`}
-      >
-        Public Logs
-        {isActive('/publiclogvoting') && <span className={styles.star}> ✦</span>}
+        Communications
+        {isActive('/commspage') && <span className={styles.star}> ✦</span>}
       </Link>
 
       <Link

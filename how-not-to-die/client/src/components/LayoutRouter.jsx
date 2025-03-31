@@ -6,6 +6,7 @@ import Navigation from './Navigation';
 
 import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
+import CommsPage from '../pages/CommsPage';
 import SurvivalGuide from '../pages/SurvivalGuide';
 import PersonalLogs from '../pages/PersonalLogs';
 import PublicLogVoting from '../pages/PublicLogVoting';
@@ -46,6 +47,7 @@ const LayoutRouter = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/commspage" element={<CommsPage />} />
             <Route path="/survivalguide" element={<SurvivalGuide />} />
             <Route path="/personallogs" element={<PersonalLogs />} />
             <Route path="/publiclogvoting" element={<PublicLogVoting />} />

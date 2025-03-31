@@ -1,4 +1,4 @@
-HOWNOTTODIE/                     ← Root Git repo folder
+HowNotToDieDemo/                     ← Root Git repo folder
 ├── README.md                    ← This should be here (so it appears on GitHub)
 │
 └── how-not-to-die/              ← Project root

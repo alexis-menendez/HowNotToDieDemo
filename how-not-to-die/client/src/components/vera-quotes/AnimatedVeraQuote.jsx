@@ -19,7 +19,7 @@ const AnimatedVeraQuote = ({ quote }) => {
   useEffect(() => {
     const id = setInterval(() => {
       setFrame((prev) => (prev % totalFrames) + 1);
-    }, 100); // adjust timing as needed
+    }, 150); // adjust timing as needed
     setIntervalId(id);
 
     return () => clearInterval(id);
@@ -40,6 +40,13 @@ const AnimatedVeraQuote = ({ quote }) => {
         className={styles.robot}
         onClick={handleClick}
       />
+
+      {!isClicked && (
+        <div className={styles.newMessageBox} onClick={handleClick}>
+          <p className={styles.newMessageText}>NEW MESSAGE!</p>
+        </div>
+      )}
+
       {isClicked && (
         <div className={styles.quoteBox}>
           <p className={styles.quote}>"{quote}"</p>

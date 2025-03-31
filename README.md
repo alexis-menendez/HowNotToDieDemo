@@ -1,11 +1,22 @@
 #  Project Name
 ##  **Description**
 
-**How Not To Die** is a full-stack web application designed to showcase user interactivity, clean design, and real-time data manipulation. Set within a stylized space-console interface, the app invites users to assume the role of an interstellar explorer navigating unknown planets, documenting survival findings, and responding to unexpected system failures.
+**How Not To Die** is a full-stack, collaborative storytelling game disguised as a survival console for interstellar explorers. Built with React, Node.js, Express, and PostgreSQL, the app is designed to showcase real-time user interactivity, clean UI/UX, and narrative-driven data flow within a stylized space-console interface.
 
-Users begin at a sign-in console and enter a central control dashboard, where they can access personal logs, explore planetary systems, and contribute to a collective archive of explorer entries. Users can also interact with a galaxy map, preview planetary data, and launch a shuttle to visit accessible worlds. Each planet includes an immersive landscape with interactive elements, an entry log system to add new logs into the survival guide, and a “malfunctioning” weather scanner that pulls real Earth weather as a stand-in for planetary conditions.
+Players assume the role of deep-space explorers sent to document the conditions of unknown planets. Each player contributes to a shared mystery by writing detailed explorer logs—some humorous, some harrowing, and some that hint at something far more ominous beneath the surface.
 
-Built using React for the front-end and Node.js/Express.js for the back-end, the app utilizes PostgreSQL with Sequelize for data persistence and includes secure JWT-based authentication. Blending sci-fi aesthetics with real-time functionality, *How Not To Die* is fully responsive, packed with thematic animations and atmospheric details, and deployed via Render. As users explore, they’ll encounter broken tools, hidden transmissions, mysterious planets filled with danger and mystery.
+Users can:
+
+- Explore planets and uncover immersive, interactive landscapes
+- Write personal logs and submit public entries for review
+- Read logs submitted by others and vote on which should be added to the official Survival Guide
+- Interact with a galaxy map and travel via shuttle to discover new worlds
+- Use malfunctioning tools like a “weather scanner” that pulls real Earth data as if it were planetary weather
+- Experience unexpected system failures, hidden transmissions, and narrative surprises as they piece together clues
+
+At its core, How Not To Die is a collaborative mystery game. Players work together to build the lore, expand the survival guide, and slowly uncover the truth behind strange signals, vanishing explorers, and the increasingly unstable AI known as VERA. Every log shapes the world, every vote builds the canon, and every clue brings players closer to the central mystery.
+
+Deployed via Render and styled with responsive, atmospheric detail, How Not To Die invites you not just to survive, but to contribute to the mythos of those who do.
 
 
 

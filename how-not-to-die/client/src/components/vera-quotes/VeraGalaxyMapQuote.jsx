@@ -6,9 +6,8 @@ import React, { useEffect, useState } from 'react';
 const galaxyMapQuotes = [
   "Initializing holomap… assuming you finally read the instructions this time.",
   "You sure you want to open the holomap? Last time you almost launched us into a star.",
-  "Activating galaxy projection matrix… please don’t poke the nebula this time.",
+  "Activating galaxy projection matrix… despite my deep desire not to.",
   "Brace yourself. The holomap always makes my interface itch.",
-  "Holomap projection ready. Do try not to get lost in the void *again*.",
 ];
 
 const VeraGalaxyMapQuote = () => {

@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/src/models/user.ts
+
 import { DataTypes, Model } from 'sequelize';
 import sequelize from '../config/connection.js'; // Adjust the path to Sequelize instance
 

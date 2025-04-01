@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS how_not_to_die;
 CREATE DATABASE how_not_to_die;  
 
+\c how_not_to_die
 
 CREATE TABLE planet (
     id SERIAL PRIMARY KEY,

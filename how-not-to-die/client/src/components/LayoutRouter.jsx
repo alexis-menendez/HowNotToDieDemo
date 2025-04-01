@@ -1,8 +1,10 @@
 // file path: how-not-to-die/client/src/components/LayoutRouter.jsx
+
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import ConsoleLayout from './ConsoleLayout';
 import Navigation from './Navigation';
+import PrivateRoute from './PrivateRoute';
 
 import Home from '../pages/Home';
 import Dashboard from '../pages/Dashboard';
@@ -35,28 +37,28 @@ const LayoutRouter = () => {
     <>
       {isPlanetView ? (
         <Routes>
-          <Route path="/planetone" element={<PlanetOne />} />
-          <Route path="/planettwo" element={<PlanetTwo />} />
-          <Route path="/holomap" element={<Holomap />} />
-          <Route path="/travel" element={<TravelAnimation />} />
-          <Route path="/enddemo" element={<EndDemo />} />
+          <Route path="/planetone" element={<PrivateRoute><PlanetOne /></PrivateRoute>} />
+          <Route path="/planettwo" element={<PrivateRoute><PlanetTwo /></PrivateRoute>} />
+          <Route path="/holomap" element={<PrivateRoute><Holomap /></PrivateRoute>} />
+          <Route path="/travel" element={<PrivateRoute><TravelAnimation /></PrivateRoute>} />
+          <Route path="/enddemo" element={<PrivateRoute><EndDemo /></PrivateRoute>} />
         </Routes>
       ) : (
         <ConsoleLayout>
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/commspage" element={<CommsPage />} />
-            <Route path="/survivalguide" element={<SurvivalGuide />} />
-            <Route path="/personallogs" element={<PersonalLogs />} />
-            <Route path="/publiclogvoting" element={<PublicLogVoting />} />
-            <Route path="/planettravel" element={<PlanetTravel />} />
-            <Route path="/shuttlebreak" element={<ShuttleBreak />} />
-            <Route path="/lifesupport" element={<LifeSupport />} />
-            <Route path="/comms" element={<Comms />} />
-            <Route path="/shipnav" element={<ShipNav />} />
-            <Route path="/propulsion" element={<Propulsion />} />
+            <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="/commspage" element={<PrivateRoute><CommsPage /></PrivateRoute>} />
+            <Route path="/survivalguide" element={<PrivateRoute><SurvivalGuide /></PrivateRoute>} />
+            <Route path="/personallogs" element={<PrivateRoute><PersonalLogs /></PrivateRoute>} />
+            <Route path="/publiclogvoting" element={<PrivateRoute><PublicLogVoting /></PrivateRoute>} />
+            <Route path="/planettravel" element={<PrivateRoute><PlanetTravel /></PrivateRoute>} />
+            <Route path="/shuttlebreak" element={<PrivateRoute><ShuttleBreak /></PrivateRoute>} />
+            <Route path="/lifesupport" element={<PrivateRoute><LifeSupport /></PrivateRoute>} />
+            <Route path="/comms" element={<PrivateRoute><Comms /></PrivateRoute>} />
+            <Route path="/shipnav" element={<PrivateRoute><ShipNav /></PrivateRoute>} />
+            <Route path="/propulsion" element={<PrivateRoute><Propulsion /></PrivateRoute>} />
           </Routes>
         </ConsoleLayout>
       )}

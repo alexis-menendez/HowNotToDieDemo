@@ -1,0 +1,88 @@
+/* file path: how-not-to-die/src/assets/css/Navigation.module.css */
+/* Top nav bar */
+
+/* Temporary placeholder styling */
+.navColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  width: 200px; 
+}
+
+.navButton {
+  background-color: rgba(0, 255, 225, 0.08);
+  border: 1px solid #00ffe1;
+  color: #00ffe1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 255, 225, 0.2);
+  transform: translateX(2px);
+}
+
+.active {
+  background-color: rgba(0, 255, 225, 0.25);
+  font-weight: bold;
+  border-left: 3px solid #00ffe1;
+}
+
+.star {
+  float: right;
+  font-size: 1.1em;
+  color: #00ffe1;
+}
+
+/* Media queries */
+
+/* media queries for tablets */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navColumn {
+    width: 100px;             
+    max-height: 100%;        
+    overflow-y: auto;         
+    padding-right: 0.5rem;    
+  }
+
+  .navButton {
+    font-size: 0.90rem;       
+    padding: 0.4rem 0.5rem;   
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .star {
+    font-size: 0.42rem;        
+  }
+}
+
+
+/* media queries for phones */
+@media screen and (max-width: 767px) {
+  .navColumn {
+    width: 50px;             
+    max-height: 100%;         
+    overflow-y: auto;        
+    padding-right: 0.5rem;    
+  }
+
+  .navButton {
+    font-size: 0.42rem;       
+    padding: 0.4rem 0.5rem;   
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .star {
+    font-size: 0.42rem;       
+  }
+}

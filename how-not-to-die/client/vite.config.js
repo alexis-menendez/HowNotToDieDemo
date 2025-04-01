@@ -5,12 +5,18 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000, // REPLACE WITH WHATEVER PORT YOU WANT /Alexis
+    port: 3000,
     proxy: {
-      '/api': {target: 'http://localhost:3001',
+      '/api': {
+        target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
-      } // REPLACE WITH WHATEVER PORT BACKEND IS USING /Alexis
+      },
+      '/auth': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      }
     },
   },
 });

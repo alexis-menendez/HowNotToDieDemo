@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/src/config/connection.ts
+
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
 dotenv.config();

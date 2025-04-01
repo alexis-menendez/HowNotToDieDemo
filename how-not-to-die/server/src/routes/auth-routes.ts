@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/src/routes/auth-routes.ts
+
 import express from 'express';
 import bcrypt from 'bcrypt';
 import User from '../models/user.js'; 

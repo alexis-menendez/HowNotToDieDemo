@@ -4,11 +4,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { PlanetProvider } from './components/holomap/PlanetLockLogic';
+import { AuthProvider } from './components/home/AuthContext';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-        <PlanetProvider>
-            <App />
-        </PlanetProvider>
-    </React.StrictMode>
+  <React.StrictMode>
+    <PlanetProvider>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </PlanetProvider>
+  </React.StrictMode>
 );

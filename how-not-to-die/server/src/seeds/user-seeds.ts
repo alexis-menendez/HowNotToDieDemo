@@ -1,5 +1,3 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/src/seeds/user-seeds.ts
-
 import User from "../models/user.js";
 
 const seedUsers = async () => {

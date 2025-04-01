@@ -1,5 +1,3 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/src/seeds/index.ts
-
 import { seedUsers } from './user-seeds.js';
 import sequelize from '../config/connection.js';
 

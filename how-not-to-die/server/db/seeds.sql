@@ -35,13 +35,5 @@ VALUES
 ('The Tree Folk', 'Vera mentioned that once a pilot entered the forest, and never came back, but sometimes you can still hear their screams.', 2),
 ('Silence', 'FILE CORRUPTED. FILE CORRUPTED.', 1);
 
--- 🌱 Seed dummy users (password for all = "test1234")
 
-INSERT INTO users (username, password)
-VALUES 
-  ('astro_ava', '$2b$10$g6EFm9gTTUB3tuLKwNOA0ucHQq0KyEKguFJxqNEwGpFzLe.dPOQSa'),
-  ('nova_nick', '$2b$10$g6EFm9gTTUB3tuLKwNOA0ucHQq0KyEKguFJxqNEwGpFzLe.dPOQSa'),
-  ('luna_lyle', '$2b$10$g6EFm9gTTUB3tuLKwNOA0ucHQq0KyEKguFJxqNEwGpFzLe.dPOQSa'),
-  ('orbit_olga', '$2b$10$g6EFm9gTTUB3tuLKwNOA0ucHQq0KyEKguFJxqNEwGpFzLe.dPOQSa'),
-  ('comet_casey', '$2b$10$g6EFm9gTTUB3tuLKwNOA0ucHQq0KyEKguFJxqNEwGpFzLe.dPOQSa');
 

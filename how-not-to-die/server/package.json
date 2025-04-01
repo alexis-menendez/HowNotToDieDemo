@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "build": "npx tsc",
-        "start": "npm run build && node dist/server.js",
+        "start": "npm run build && node dist/server.js --ignore client --env-file='.env'",
         "dev": "npx nodemon",
         "test": "echo \"Error: no test specified\" && exit 1",
         "seed": "node dist/seeds/index.js"

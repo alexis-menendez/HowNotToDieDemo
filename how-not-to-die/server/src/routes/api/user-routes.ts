@@ -1,5 +1,3 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/src/routes/api/user-routes.ts
-
 import express from 'express';
 import User from '../../models/user.js';
 import { verifyToken } from '../../middleware/auth.js';

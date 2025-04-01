@@ -1,22 +1,17 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/server.ts
-
 import express from "express";
-import authRoutes from './src/routes/auth-routes.js';
 import { Sequelize, DataTypes, Model } from "sequelize";
 //import cors from 'cors';
 
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 // Load .env config
 dotenv.config();
-
 
 const app = express();
 const PORT = 3001;
 
 //app.use(cors());
 app.use(express.json());
-app.use('/auth', authRoutes);
 
 // Initialize Sequelize with PostgreSQL
 const sequelize = new Sequelize(
@@ -109,7 +104,6 @@ app.get("/api/planets", async (_req, res) => {
   }
 });
 
-// API to fetch users
 app.get("/api/users", async (_, res) => {
   try {
     const users = await Users.findAll();

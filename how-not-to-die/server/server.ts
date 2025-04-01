@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/server.ts
+
 import express from "express";
 import authRoutes from './src/routes/auth-routes.js';
 import { Sequelize, DataTypes, Model } from "sequelize";

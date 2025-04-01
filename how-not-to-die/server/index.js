@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/index.js
+
 import express from 'express';
 import dotenv from 'dotenv';
 import authRoutes from './src/routes/auth-routes.js';

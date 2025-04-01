@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/src/middleware/auth.ts
+
 import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';
@@ -14,7 +16,6 @@ export const generateToken = (userId: number): string => {
   return jwt.sign({ id: userId }, JWT_SECRET_KEY, { expiresIn: '1h' });
 };
 
-// ✅ Correct Type Definition for Middleware
 export const verifyToken = (req: Request, res: Response, next: NextFunction): void => {
   const token = req.header('Authorization')?.split(' ')[1];
 

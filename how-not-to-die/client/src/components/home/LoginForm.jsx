@@ -67,11 +67,6 @@ const LoginForm = () => {
         <button type="submit">Access Console</button>
         {errorMsg && <p className={styles.error}>{errorMsg}</p>}
       </form>
-
-      <div className={styles.registerPrompt}>
-        <p>Don’t have an account?</p>
-        <button className={styles.registerButton}>Register Here</button>
-      </div>
     </>
   );
 };

@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/index.ts
+
 import express from 'express';
 import authRoutes from './src/routes/auth-routes.js';
 

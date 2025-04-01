@@ -154,9 +154,9 @@ TEAM MEMBER 5
 *  **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
 *  **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
 
-TEAM MEMBER 6
-*  **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
-*  **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
+JoAnna Price
+*  **GitHub**: [joanna-price](https://github.com/jo-price)
+*  **Email**: joannagprice@gmail.com
 
 TEAM MEMBER 7
 *  **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**

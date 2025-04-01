@@ -1,0 +1,72 @@
+/* file path: how-not-to-die/client/src/assets/css/vera-quotes/AnimatedVeraQuote.module.css */
+
+.veraWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.robot {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+}
+
+.newMessageBox {
+  background-color: #00ffcc;
+  color: black;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  animation: pulse 1s infinite alternate;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: transform 0.2s;
+}
+
+.newMessageBox:hover {
+  transform: scale(1.1);
+}
+
+.newMessageText {
+  margin: 0;
+  font-size: 14px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.quoteBox {
+  background-color: rgba(0, 255, 204, 0.12);
+  border: 1px solid #00ffcc;
+  border-radius: 6px;
+  padding: 10px 14px;
+  max-width: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.quote {
+  color: #00ffcc;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

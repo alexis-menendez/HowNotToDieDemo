@@ -1,0 +1,106 @@
+/* file path: how-not-to-die/client/src/assets/css/public-log-voting/PublicLogs.module.css */
+
+.voteControls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .voteControls button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 8px 14px;
+    background-color: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 0 0 2px #00ffcc;
+    box-shadow: 0 0 6px rgba(0, 255, 204, 0.3);
+  }
+  
+  .voteControls button:hover {
+    background-color: rgba(0, 255, 204, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .voteCount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffee;
+    text-shadow: 0 0 4px #00ffee;
+  }
+
+  .submitButton {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    background-color: #00ffcc;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 8px #00ffcc;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background-color: #00e6b8;
+    box-shadow: 0 0 12px #00ffcc;
+    transform: scale(1.05);
+  }
+  
+  .submitButton:disabled {
+    background-color: rgba(0, 255, 204, 0.15);
+    color: #00ffcc;
+    cursor: not-allowed;
+    border: 1px dashed #00ffcc;
+    box-shadow: none;
+    opacity: 0.6;
+  }
+  
+
+  .logCard {
+    background-color: rgba(0, 255, 204, 0.08);
+    border: 1px solid #00ffcc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.2);
+  }
+  
+  .logHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #00ffee;
+    text-shadow: 0 0 2px #00ffee;
+  }
+  
+  .username,
+  .planet {
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    color: #00ffcc;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 4px #00ffcc;
+  }
+  
+  .body {
+    font-size: 1rem;
+    color: #bafff4;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  

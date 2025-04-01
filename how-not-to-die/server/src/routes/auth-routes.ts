@@ -1,6 +1,6 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
-import User from '../models/user.js'; // or wherever your model is
+import User from '../models/user.js'; 
 import { generateToken } from '../middleware/auth.js';
 
 const router = express.Router();

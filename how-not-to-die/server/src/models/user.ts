@@ -1,14 +1,11 @@
 import { DataTypes, Model } from 'sequelize';
-import sequelize from '../config/connection.js'; // Adjust the path to your Sequelize instance
+import sequelize from '../config/connection.js'; // Adjust the path to Sequelize instance
 
 class User extends Model {
   public id!: number;
   public username!: string;
   public password!: string;
 
-  // Optional fields if you ever add timestamps
-  // public readonly createdAt!: Date;
-  // public readonly updatedAt!: Date;
 }
 
 User.init(
@@ -31,8 +28,8 @@ User.init(
   {
     sequelize,
     modelName: 'User',
-    tableName: 'users', // ✅ match the lowercase table in your DB
-    timestamps: false,  // ✅ set to true if your table has createdAt/updatedAt
+    tableName: 'users', //  match the lowercase table in  DB
+    timestamps: false,  // set to true if table has createdAt/updatedAt
   }
 );
 

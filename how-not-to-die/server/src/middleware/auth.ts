@@ -14,7 +14,6 @@ export const generateToken = (userId: number): string => {
   return jwt.sign({ id: userId }, JWT_SECRET_KEY, { expiresIn: '1h' });
 };
 
-// ✅ Correct Type Definition for Middleware
 export const verifyToken = (req: Request, res: Response, next: NextFunction): void => {
   const token = req.header('Authorization')?.split(' ')[1];
 

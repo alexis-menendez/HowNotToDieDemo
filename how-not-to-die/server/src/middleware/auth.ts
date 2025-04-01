@@ -1,3 +1,5 @@
+//file path: HowNotToDieDemo/how-not-to-die/server/src/middleware/auth.ts
+
 import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';

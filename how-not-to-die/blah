@@ -1,22 +1,17 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/server.ts
-
 import express from "express";
-import authRoutes from './src/routes/auth-routes.js';
 import { Sequelize, DataTypes, Model } from "sequelize";
 //import cors from 'cors';
 
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 // Load .env config
 dotenv.config();
-
 
 const app = express();
 const PORT = 3001;
 
 //app.use(cors());
 app.use(express.json());
-app.use('/auth', authRoutes);
 
 // Initialize Sequelize with PostgreSQL
 const sequelize = new Sequelize(
@@ -60,6 +55,7 @@ Planet.init(
     timestamps: false,
   }
 );
+
 // landing spot
 class LandingSpot extends Model {}
 LandingSpot.init(
@@ -161,7 +157,6 @@ Fauna.init(
   }
 );
 
-
 //unexplained
 class Unexplained extends Model {}
 Unexplained.init(
@@ -193,7 +188,6 @@ Unexplained.init(
     timestamps: false,
   }
 );
-
 
 class Users extends Model {}
 Users.init(
@@ -287,17 +281,11 @@ app.get("/api/unexplained", async (_req, res) => {
   }
 });
 
-// API to fetch users
-app.get("/api/users", async (_, res) => {
-  try {
-    const users = await Users.findAll();
-    res.json(users);
-  } catch (error) {
-    console.error("Error fetching users:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+// Sync the models with the database
+
+// Export the models for use in other files
+;

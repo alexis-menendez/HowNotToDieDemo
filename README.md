@@ -60,50 +60,50 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 2. Clone the Repository
 
    - bash:
-     >  git clone https://github.com/your-repo/how-not-to-die-demo.git
-     >  cd project-name
+     >  git clone https://github.com/your-repo/how-not-to-die-demo.git  
+     >  cd project-name  
 
 3. Install Dependencies
 
    - Open an Integrated terminal in /client:
    - bash:
-     >  cd how-not-to-die/client
-     >  npm install
+     >  cd how-not-to-die/client  
+     >  npm install  
 
    - Open an Integrated terminal in /server:
    - bash:
-     >  cd ../server
-     >  npm install
+     >  cd ../server  
+     >  npm install  
 
 
 4. Create a .env file in the root directory with the following:
 
-   >  DB_NAME=your_db
-   >  DB_USER=your_user
-   >  DB_PASSWORD=your_password
-   >  JWT_SECRET=your_secret
-   >  API_KEY_1=xxxx
+   >  DB_NAME=your_db  
+   >  DB_USER=your_user  
+   >  DB_PASSWORD=your_password  
+   >  JWT_SECRET=your_secret  
+   >  API_KEY_1=xxxx  
 
 5. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:
 
    - Open an Integrated terminal in /server:
    - bash:
-     >  npx sequelize-cli db:create
-     >  npx sequelize-cli db:migrate
-     >  npx sequelize-cli db:seed:all
+     >  npx sequelize-cli db:create  
+     >  npx sequelize-cli db:migrate  
+     >  npx sequelize-cli db:seed:all  
 
 
 6. Start the Server
    - Open an Integrated terminal in /server:
    - bash:
-     >  cd how-not-to-die/server
-     >  npm run dev
+     >  cd how-not-to-die/server  
+     >  npm run dev  
 
 6. Start the Client
    - Open an Integrated terminal in /client:
    - bash:
-     >  cd how-not-to-die/client
-     >  npm run dev
+     >  cd how-not-to-die/client  
+     >  npm run dev  
 
 
 ## Usage

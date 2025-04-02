@@ -37,7 +37,8 @@ const RegisterForm = () => {
       const text = await response.text();
       console.log("Raw response from /auth/register:", text);
 
-      let data;
+      let data = {};
+    if (text) {  // ✅ Prevents JSON.parse("") error
       try {
         data = JSON.parse(text);
       } catch (err) {

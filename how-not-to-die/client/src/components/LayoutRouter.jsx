@@ -23,6 +23,12 @@ import Comms from '../pages/ship-functions/Comms';
 import ShipNav from '../pages/ship-functions/ShipNav';
 import Propulsion from '../pages/ship-functions/Propulsion';
 import EndDemo from '../pages/EndDemo';
+import Brune from '../pages/survival/Brune';
+import Flora from '../pages/survival/Flora';
+import LandingSpot from '../pages/survival/Landingspot';
+import Unexplained from '../pages/survival/Unexplained';
+import Fauna from '../pages/survival/Fauna';
+
 
 const LayoutRouter = () => {
   const location = useLocation();
@@ -59,6 +65,12 @@ const LayoutRouter = () => {
             <Route path="/comms" element={<PrivateRoute><Comms /></PrivateRoute>} />
             <Route path="/shipnav" element={<PrivateRoute><ShipNav /></PrivateRoute>} />
             <Route path="/propulsion" element={<PrivateRoute><Propulsion /></PrivateRoute>} />
+            <Route path="/brune" element={<PrivateRoute><Brune /></PrivateRoute>} />
+            <Route path="/flora" element={<PrivateRoute><Flora /></PrivateRoute>} />
+            <Route path="/landingspot" element={<PrivateRoute><LandingSpot /></PrivateRoute>} />
+            <Route path="/unexplained" element={<PrivateRoute><Unexplained /></PrivateRoute>} />
+            <Route path="/fauna" element={<PrivateRoute><Fauna /></PrivateRoute>} />
+
           </Routes>
         </ConsoleLayout>
       )}

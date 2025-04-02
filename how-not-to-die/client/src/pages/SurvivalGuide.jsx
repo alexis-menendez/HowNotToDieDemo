@@ -29,9 +29,8 @@ const SurvivalGuide = () => {
         <li>Recharge your suit before nightfall. Nightfall is... bad.</li>
       </ul>
 
-      <h1>We were there before...</h1>
-      <p>Select an option below to view what could have been. These were the logs of the first pilots to take on the mission.
-        They were by the far the most successful</p>
+      <h1>Field Data Archives</h1>
+      <p>Before you, others tried their luck. Most didn’t make it. Their logs remain—fragmented, chaotic, and occasionally useful. Explore what they left behind:</p>
 
    
       <div className={styles.diagnosticsGrid}>
@@ -41,12 +40,12 @@ const SurvivalGuide = () => {
         </div>
 
         <div className={styles.diagnosticRow}>
-           <button onClick={() => navigate('/landingspot')}>AssignedStartPooint</button>
+           <button onClick={() => navigate('/landingspot')}>Initial Drop Points</button>
         </div>
 
 
         <div className={styles.diagnosticRow}>
-          <button onClick={() => navigate('/flora')}>Not everything as thorns...</button>
+          <button onClick={() => navigate('/flora')}>Not everything has thorns...</button>
         </div>
 
         <div className={styles.diagnosticRow}>
@@ -55,7 +54,7 @@ const SurvivalGuide = () => {
 
 
         <div className={styles.diagnosticRow}>
-           <button onClick={() => navigate('/unexplained')}>The Unexplained</button>
+           <button onClick={() => navigate('/unexplained')}>Unclassified Anomalies</button>
         </div>
       </div>
 

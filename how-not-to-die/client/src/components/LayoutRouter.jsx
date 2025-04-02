@@ -50,9 +50,9 @@ const LayoutRouter = () => {
           <Route path="/enddemo" element={<PrivateRoute><EndDemo /></PrivateRoute>} />
         </Routes>
       ) : (
-        <ConsoleLayout>
-          <Navigation />
+        <ConsoleLayout navigation={<Navigation />}>
           <Routes>
+            
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
             <Route path="/commspage" element={<PrivateRoute><CommsPage /></PrivateRoute>} />

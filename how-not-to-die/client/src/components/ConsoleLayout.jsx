@@ -2,7 +2,8 @@
 import React from 'react';
 import styles from '../assets/css/ConsoleLayout.module.css';
 
-const ConsoleLayout = ({ children }) => {
+// ConsoleLayout.jsx
+const ConsoleLayout = ({ navigation, children }) => {
   return (
     <div className={styles.outerWrapper}>
       <div className={styles.imageWrapper}>
@@ -24,11 +25,10 @@ const ConsoleLayout = ({ children }) => {
         <div className={styles.consoleScreen}>
           <div className={styles.consoleContent}>
             <div className={styles.navColumn}>
-              {/* Navigation gets passed in here by LayoutRouter */}
-              {children.find?.(child => child.type?.name === 'Navigation') || null}
+              {navigation}
             </div>
             <div className={styles.pageContent}>
-              {children.filter?.(child => child.type?.name !== 'Navigation') || children}
+              {children}
             </div>
           </div>
         </div>

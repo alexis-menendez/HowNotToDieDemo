@@ -19,18 +19,20 @@ At its core, How Not To Die is a collaborative mystery game. Players work togeth
 
 Deployed via Render and styled with responsive, atmospheric detail, How Not To Die invites you not just to survive, but to contribute to the mythos of those who do.
 
-| **Key Features**                               | **Technology Stack**                                                                                  |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Interactive, intuitive UI built with React     | **Front-End:** [React](https://react.dev/)                                                            |
-| Secure user authentication using JWT           | **Back-End:** [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)                    |
-| PostgreSQL database with Sequelize ORM         | **Database:** [PostgreSQL](https://www.npmjs.com/package/pg), [Sequelize ORM](https://sequelize.org/) |
-| Responsive layout for mobile and desktop       | **Authentication:** [JWT](https://jwt.io/)                                                            |
-| RESTful API endpoints (GET and POST)           | **Deployment:** [Render](https://render.com/)                                                         |
-| Integration with at least two server-side APIs | **Version Control:** [Git](https://git-scm.com/), [GitHub](https://github.com/)                       |
-| Secure handling of API keys and env variables  | **OTHER:** INSERT TECHNOLOGY STACK HERE                                                               |
-| (INSERT KEY FEATURE HERE)                      |                                                                                                       |
-| (INSERT KEY FEATURE HERE)                      |                                                                                                       |
-| (INSERT KEY FEATURE HERE)                      |                                                                                                       |
+| **Key Features**                                  | **Technology Stack**                                                                                                                                       |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Interactive, intuitive UI built with React        | **Languages:** [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (client), [TypeScript](https://www.typescriptlang.org/docs/) (server) |
+| Responsive layout for mobile and desktop          | **Front-End:** [React](https://react.dev/)                                                                                                                 |
+| Reusable component architecture with CSS modules  | **Styling:** [CSS Modules](https://github.com/css-modules/css-modules), [Responsive Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)                                                                                                                                                           |
+| Client-side routing with protected routes         | **State Management:** [React Context API](https://react.dev/reference/react/useContext)                                                                    |
+| Private user logs with full CRUD capabilities     | **Routing:** [React Router](https://reactrouter.com/)                                                                                                      |
+| In-app messaging system with persistent threads   | **Back-End:** [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)                                                                         |
+| Voting system with upvote threshold gating        | **Database:** [PostgreSQL](https://www.npmjs.com/package/pg), [Sequelize ORM](https://sequelize.org/)                                                      |
+| RESTful API endpoints (GET and POST)              | **Authentication:** [JWT](https://jwt.io/)                                                                                                                 |
+| Integration with server-side APIs                 | **Security:** [bcrypt](https://www.npmjs.com/package/bcrypt), [.env](.env for API key protection) (for API key protection)                                 |
+| Secure user authentication using JWT              | **Build Tools:** [Vite](https://vite.dev/)                                                                                                                 |
+| Secure handling of API keys and env variables     | **Deployment:** [Render](https://render.com/)                                                                                                              |
+| PostgreSQL database with Sequelize ORM            | **Version Control:** [Git](https://git-scm.com/), [GitHub](https://github.com/)                                                                            |
 
 ## Table of Contents
 

@@ -60,6 +60,141 @@ Planet.init(
     timestamps: false,
   }
 );
+// landing spot
+class LandingSpot extends Model {}
+LandingSpot.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    planet_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Planet,
+        key: "id",
+      },
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.TEXT,
+    },
+    flora: {
+      type: DataTypes.STRING,
+    },
+    fauna: {
+      type: DataTypes.STRING,
+    },
+  },
+  {
+    sequelize,
+    modelName: "LandingSpot",
+    tableName: "landingspot",
+    timestamps: false,
+  }
+);
+
+// flora
+class Flora extends Model {}
+Flora.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.TEXT,
+    },
+    planet_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Planet,
+        key: "id",
+      },
+    },
+  },
+  {
+    sequelize,
+    modelName: "Flora",
+    tableName: "flora",
+    timestamps: false,
+  }
+);
+
+class Fauna extends Model {}
+Fauna.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.TEXT,
+    },
+    planet_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Planet,
+        key: "id",
+      },
+    },
+  },
+  {
+    sequelize,
+    modelName: "Fauna",
+    tableName: "fauna",
+    timestamps: false,
+  }
+);
+
+
+//unexplained
+class Unexplained extends Model {}
+Unexplained.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.TEXT,
+    },
+    planet_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: Planet,
+        key: "id",
+      },
+    },
+  },
+  {
+    sequelize,
+    modelName: "Unexplained",
+    tableName: "unexplained",
+    timestamps: false,
+  }
+);
+
+
 
 class Users extends Model {}
 Users.init(
@@ -102,9 +237,59 @@ sequelize
 app.get("/api/planets", async (_req, res) => {
   try {
     const planets = await Planet.findAll();
+    console.log(planets, "planets"); // Log the fetched planets
     res.json(planets);
   } catch (error) {
     console.error("Error fetching planets:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+// API route to fetch flora
+app.get("/api/landingspot", async (_req, res) => {
+  try {
+    const landingspot = await LandingSpot.findAll(); // Fetch all flora from the database
+    console.log(landingspot, "landingspot"); // Log the fetched flora
+    res.json(landingspot); // Send flora as JSON
+  } catch (error) {
+    console.error("Error fetching the landingspot:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+app.get("/api/flora", async (_req, res) => {
+  try {
+    const flora = await Flora.findAll(); // Fetch all flora from the database
+    console.log(flora, "flora");
+    res.json(flora); // Send flora as JSON
+  } catch (error) {
+    console.error("Error fetching flora:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+// API route to fetch fauna
+app.get("/api/fauna", async (_req, res) => {
+  try {
+    const fauna = await Fauna.findAll(); // Fetch all fauna from the database
+    console.log(fauna, "fauna");
+    res.json(fauna); // Send fauna as JSON
+  } catch (error) {
+    console.error("Error fetching fauna:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+
+
+// API route to fetch fauna
+app.get("/api/unexplained", async (_req, res) => {
+  try {
+    const unexplained = await Unexplained.findAll(); // Fetch all fauna from the database
+    console.log(unexplained, "unexplained");
+    res.json(unexplained); // Send fauna as JSON
+  } catch (error) {
+    console.error("Error fetching the unexplained mysteries:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -119,6 +304,10 @@ app.get("/api/users", async (_, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
+
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

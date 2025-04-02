@@ -122,6 +122,7 @@ There are currently no automated tests for this project
 ## Documentation
 
 - [Project Repository](https://github.com/zomblic/HowNottoDie) **(UPDATE LINK IF NAME OF PROJECT CHANGES!!!!)**
+- [Second Project Respository](https://github.com/alexis-menendez/HowNotToDieDemo)
 - [Walkthrough Video](https://drive.google.com/LINK/GOES/HERE) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
 - [Google Slides](https://docs.google.com/presentation/d/13Oqs7l09W7mch0W5Edy-X467CzWSoOtFeIJcjjSoi7U/edit?usp=sharing)
 - [Google Doc](https://docs.google.com/document/d/1lG3wGpQglw6aqWl2WG_FtDNSuud-BfDb08JUTFICkO8/edit?tab=t.0#heading=h.sp7vjy6pkvd4)
@@ -148,8 +149,8 @@ Blake Brittain
 
 TEAM MEMBER 3
 
-- **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
-- **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
+- **GitHub**: [Constance](https://github.com/zomblic) 
+- **Email**: zomblic@hotmail.com 
 
 TEAM MEMBER 4
 
@@ -166,7 +167,3 @@ JoAnna Price
 - **GitHub**: [joanna-price](https://github.com/jo-price)
 - **Email**: joannagprice@gmail.com
 
-TEAM MEMBER 7
-
-- **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
-- **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**

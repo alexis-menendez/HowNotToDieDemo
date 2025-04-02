@@ -78,11 +78,11 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 
 4. Create a .env file in the root directory with the following:
 
-   >  DB_NAME=your_db  
-   >  DB_USER=your_user  
-   >  DB_PASSWORD=your_password  
-   >  JWT_SECRET=your_secret  
-   >  API_KEY_1=xxxx  
+     >  DB_NAME=your_db  
+     >  DB_USER=your_user  
+     >  DB_PASSWORD=your_password  
+     >  JWT_SECRET=your_secret  
+     >  API_KEY_1=xxxx  
 
 5. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:
 

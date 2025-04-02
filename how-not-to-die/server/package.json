@@ -13,6 +13,7 @@
     "dependencies": {
         "@types/helmet": "^0.0.48",
         "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
         "dotenv": "^16.4.7",
         "express": "^4.21.2",
         "helmet": "^8.1.0",
@@ -26,6 +27,7 @@
     "devDependencies": {
         "@eslint/js": "^9.21.0",
         "@types/bcrypt": "^5.0.2",
+        "@types/cors": "^2.8.17",
         "@types/express": "^5.0.1",
         "@types/jsonwebtoken": "^9.0.9",
         "@types/node": "^22.13.14",

@@ -1,57 +1,34 @@
-//file path: HowNotToDieDemo/how-not-to-die/server/server.ts
+// file path: HowNotToDieDemo/how-not-to-die/server/server.ts
 
 import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
 import authRoutes from './src/routes/auth-routes.js';
-import { Sequelize, DataTypes, Model } from "sequelize";
-//import cors from 'cors';
+import sequelize from './src/config/connection'; // Use shared connection
 
-import dotenv from 'dotenv';
+import { DataTypes, Model } from "sequelize";
 
-// Load .env config
 dotenv.config();
-
 
 const app = express();
 const PORT = 3001;
 
-//app.use(cors());
+// Allow all origins (for development only)
+app.use(cors({ origin: true, credentials: true }));
+
 app.use(express.json());
 app.use('/auth', authRoutes);
 
-// Initialize Sequelize with PostgreSQL
-const sequelize = new Sequelize(
-  process.env.DB_NAME || "",
-  process.env.DB_USER || "",
-  process.env.DB_PASSWORD || "",
-  {
-    host: "localhost",
-    dialect: "postgres",
-  }
-);
+// === Sequelize Models ===
 
-// Define Planet model
 class Planet extends Model {}
 Planet.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-
-    description: {
-      type: DataTypes.TEXT,
-    },
-    hostility: {
-      type: DataTypes.STRING,
-    },
-    exploration: {
-      type: DataTypes.STRING,
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.TEXT },
+    hostility: { type: DataTypes.STRING },
+    exploration: { type: DataTypes.STRING },
   },
   {
     sequelize,
@@ -60,35 +37,16 @@ Planet.init(
     timestamps: false,
   }
 );
-// landing spot
+
 class LandingSpot extends Model {}
 LandingSpot.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    planet_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Planet,
-        key: "id",
-      },
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-    },
-    flora: {
-      type: DataTypes.STRING,
-    },
-    fauna: {
-      type: DataTypes.STRING,
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    planet_id: { type: DataTypes.INTEGER, references: { model: Planet, key: "id" } },
+    name: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.TEXT },
+    flora: { type: DataTypes.STRING },
+    fauna: { type: DataTypes.STRING },
   },
   {
     sequelize,
@@ -98,29 +56,13 @@ LandingSpot.init(
   }
 );
 
-// flora
 class Flora extends Model {}
 Flora.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-    },
-    planet_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Planet,
-        key: "id",
-      },
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.TEXT },
+    planet_id: { type: DataTypes.INTEGER, references: { model: Planet, key: "id" } },
   },
   {
     sequelize,
@@ -133,25 +75,10 @@ Flora.init(
 class Fauna extends Model {}
 Fauna.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-    },
-    planet_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Planet,
-        key: "id",
-      },
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.TEXT },
+    planet_id: { type: DataTypes.INTEGER, references: { model: Planet, key: "id" } },
   },
   {
     sequelize,
@@ -161,30 +88,13 @@ Fauna.init(
   }
 );
 
-
-//unexplained
 class Unexplained extends Model {}
 Unexplained.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.TEXT,
-    },
-    planet_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Planet,
-        key: "id",
-      },
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: DataTypes.STRING, allowNull: false },
+    description: { type: DataTypes.TEXT },
+    planet_id: { type: DataTypes.INTEGER, references: { model: Planet, key: "id" } },
   },
   {
     sequelize,
@@ -194,30 +104,13 @@ Unexplained.init(
   }
 );
 
-
-
 class Users extends Model {}
 Users.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    created_at: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
-      allowNull: false,
-    },
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
+    username: { type: DataTypes.STRING, allowNull: false, unique: true },
+    password: { type: DataTypes.STRING, allowNull: false },
+    created_at: { type: DataTypes.DATE, defaultValue: DataTypes.NOW, allowNull: false },
   },
   {
     sequelize,
@@ -227,17 +120,12 @@ Users.init(
   }
 );
 
-// Test database connection
-sequelize
-  .authenticate()
-  .then(() => console.log("Connected to PostgreSQL via Sequelize"))
-  .catch((err) => console.error("Unable to connect to database:", err));
+// === API Routes ===
 
-// API route to fetch planets
 app.get("/api/planets", async (_req, res) => {
   try {
     const planets = await Planet.findAll();
-    console.log(planets, "planets"); // Log the fetched planets
+    console.log(planets, "planets");
     res.json(planets);
   } catch (error) {
     console.error("Error fetching planets:", error);
@@ -245,12 +133,11 @@ app.get("/api/planets", async (_req, res) => {
   }
 });
 
-// API route to fetch flora
 app.get("/api/landingspot", async (_req, res) => {
   try {
-    const landingspot = await LandingSpot.findAll(); // Fetch all flora from the database
-    console.log(landingspot, "landingspot"); // Log the fetched flora
-    res.json(landingspot); // Send flora as JSON
+    const landingspot = await LandingSpot.findAll();
+    console.log(landingspot, "landingspot");
+    res.json(landingspot);
   } catch (error) {
     console.error("Error fetching the landingspot:", error);
     res.status(500).json({ error: "Internal server error" });
@@ -259,43 +146,38 @@ app.get("/api/landingspot", async (_req, res) => {
 
 app.get("/api/flora", async (_req, res) => {
   try {
-    const flora = await Flora.findAll(); // Fetch all flora from the database
+    const flora = await Flora.findAll();
     console.log(flora, "flora");
-    res.json(flora); // Send flora as JSON
+    res.json(flora);
   } catch (error) {
     console.error("Error fetching flora:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
 
-// API route to fetch fauna
 app.get("/api/fauna", async (_req, res) => {
   try {
-    const fauna = await Fauna.findAll(); // Fetch all fauna from the database
+    const fauna = await Fauna.findAll();
     console.log(fauna, "fauna");
-    res.json(fauna); // Send fauna as JSON
+    res.json(fauna);
   } catch (error) {
     console.error("Error fetching fauna:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
 
-
-
-// API route to fetch fauna
 app.get("/api/unexplained", async (_req, res) => {
   try {
-    const unexplained = await Unexplained.findAll(); // Fetch all fauna from the database
+    const unexplained = await Unexplained.findAll();
     console.log(unexplained, "unexplained");
-    res.json(unexplained); // Send fauna as JSON
+    res.json(unexplained);
   } catch (error) {
     console.error("Error fetching the unexplained mysteries:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
 
-// API to fetch users
-app.get("/api/users", async (_, res) => {
+app.get("/api/users", async (_req, res) => {
   try {
     const users = await Users.findAll();
     res.json(users);
@@ -305,10 +187,19 @@ app.get("/api/users", async (_, res) => {
   }
 });
 
+// === Start Server ===
 
-
-
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log("Connected to PostgreSQL via Sequelize");
+    return sequelize.sync(); // Optional sync for dev
+  })
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Unable to connect to database:", err);
+  });

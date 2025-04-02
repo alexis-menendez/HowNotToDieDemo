@@ -52,55 +52,58 @@ Deployed via Render and styled with responsive, atmospheric detail, How Not To D
 
 This app is deployed on Render and can be [accessed here.](https://hownottodie.onrender.com/) To run the app locally:
 
-1. Ensure you have the following installed:
+**1. Ensure you have the following installed:**
    - [Express.js](https://expressjs.com/)
    - [Node.js](https://nodejs.org/)
    - [npm](https://www.npmjs.com/) (Comes bundled with Node.js)
    - [PostgreSQL](https://www.postgresql.org/)
-2. Clone the Repository
+     
+**2. Clone the Repository**
 
    - bash:
      >  git clone https://github.com/your-repo/how-not-to-die-demo.git  
      >  cd project-name  
 
-3. Install Dependencies
+**3. Install Client Dependencies**
 
-   - Open an Integrated terminal in /client:
+   - **Open an Integrated terminal in /client:**
    - bash:
      >  cd how-not-to-die/client  
      >  npm install  
 
-   - Open an Integrated terminal in /server:
+**4. Install Server Dependencies**
+   - **Open an Integrated terminal in /server:**
    - bash:
      >  cd ../server  
      >  npm install  
 
 
-4. Create a .env file in the root directory with the following:
+**5. Create a .env file in the root directory with the following:**
 
+   - **.env:**
      >  DB_NAME=your_db  
      >  DB_USER=your_user  
      >  DB_PASSWORD=your_password  
      >  JWT_SECRET=your_secret  
      >  API_KEY_1=xxxx  
 
-5. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:
+**6. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:**
 
-   - Open an Integrated terminal in /server:
+   - **Open an Integrated terminal in /server:**
    - bash:
      >  npx sequelize-cli db:create  
      >  npx sequelize-cli db:migrate  
      >  npx sequelize-cli db:seed:all  
 
 
-6. Start the Server
-   - Open an Integrated terminal in /server:
+**7. Start the Server**
+   - **Open an Integrated terminal in /server:**
    - bash:
      >  cd how-not-to-die/server  
      >  npm run dev  
 
-6. Start the Client
-   - Open an Integrated terminal in /client:
+**8. Start the Client**
+   - **Open an Integrated terminal in /client:**
    - bash:
      >  cd how-not-to-die/client  
      >  npm run dev  

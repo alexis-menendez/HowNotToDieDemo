@@ -4,7 +4,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from './src/routes/auth-routes.js';
-import sequelize from './src/config/connection'; // Use shared connection
+import sequelize from './src/config/connection.js'; // Use shared connection
 
 import { DataTypes, Model } from "sequelize";
 

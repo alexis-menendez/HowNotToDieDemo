@@ -93,12 +93,13 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
      >  npx sequelize-cli db:seed:all
 
 
-6. Start the App
+6. Start the Server
    - Open an Integrated terminal in /server:
    - bash:
      >  cd how-not-to-die/server
      >  npm run dev
 
+6. Start the Client
    - Open an Integrated terminal in /client:
    - bash:
      >  cd how-not-to-die/client

@@ -13,6 +13,9 @@ const RegisterForm = () => {
   const navigate = useNavigate();
   const { login } = useContext(AuthContext);
 
+  const API_BASE_URL = "https://hownottodiedemo.onrender.com";
+  
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMsg('');
@@ -28,7 +31,7 @@ const RegisterForm = () => {
     }
 
     try {
-      const response = await fetch('/auth/register', {
+      const response = await  fetch(`${API_BASE_URL}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

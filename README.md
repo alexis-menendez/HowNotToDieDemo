@@ -66,10 +66,12 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 3. Install Dependencies
 
    - Open an Integrated terminal in /client:
+   - bash:
      >  cd how-not-to-die/client
      >  npm install
 
    - Open an Integrated terminal in /server:
+   - bash:
      >  cd ../server
      >  npm install
 
@@ -85,6 +87,7 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 5. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:
 
    - Open an Integrated terminal in /server:
+   - bash:
      >  npx sequelize-cli db:create
      >  npx sequelize-cli db:migrate
      >  npx sequelize-cli db:seed:all
@@ -92,10 +95,12 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 
 6. Start the App
    - Open an Integrated terminal in /server:
+   - bash:
      >  cd how-not-to-die/server
      >  npm run dev
 
    - Open an Integrated terminal in /client:
+   - bash:
      >  cd how-not-to-die/client
      >  npm run dev
 

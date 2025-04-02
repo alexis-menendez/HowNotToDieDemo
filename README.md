@@ -50,7 +50,7 @@ Deployed via Render and styled with responsive, atmospheric detail, How Not To D
 
 ## Installation
 
-To run the app locally:
+This app is deployed on Render and can be [accessed here.](https://hownottodie.onrender.com/) To run the app locally:
 
 1. Ensure you have the following installed:
    - [Express.js](https://expressjs.com/)
@@ -60,13 +60,19 @@ To run the app locally:
 2. Clone the Repository
 
    - bash:
-     - git clone https://github.com/your-repo/project-name.git
+     - git clone https://github.com/your-repo/how-not-to-die-demo.git
      - cd project-name
 
 3. Install Dependencies
 
-   - bash:
+   - Open an Integrated terminal in /client:
+     - cd how-not-to-die/client
      - npm install
+
+   - Open an Integrated terminal in /server:
+     - cd ../server
+     - npm install
+
 
 4. Create a .env file in the root directory with the following:
 
@@ -75,26 +81,37 @@ To run the app locally:
    - DB_PASSWORD=your_password
    - JWT_SECRET=your_secret
    - API_KEY_1=xxxx
-   - API_KEY_2=yyyy
 
-5. Set up the Database
+5. Ensure PostgreSQL is running. Then create your database and apply any migrations/seeds:
 
-   - Create the PostgreSQL database and run migrations/seeds as needed
+   - Open an Integrated terminal in /server:
+     - npx sequelize-cli db:create
+     - npx sequelize-cli db:migrate
+     - npx sequelize-cli db:seed:all
 
-6. Start the Server
-   - bash:
-     - npm start
+
+6. Start the App
+   - Open an Integrated terminal in /server:
+     - cd how-not-to-die/server
+     - npm run dev
+
+   - Open an Integrated terminal in /client:
+     - cd how-not-to-die/client
+     - npm run dev
+
 
 ## Usage
 
-1. Once the server is running, open your browser and navigate to:
-
-   - http://localhost:3000
+1. Once the server is running, navigate to the link that starts with “http://localhost:” found in your terminal after starting the client
 
 2. From there, users can:
-   - Sign up and log in
-   - Interact with the app features
-   - View, post, or update data **(UPDATE THIS ACCORDING TO PROJECT DESIGN)**
+   - Register or sign in through the console-style login screen
+   - Navigate a sci-fi command dashboard powered by VERA
+   - Submit, edit, and manage personal explorer logs
+   - Vote on public log entries submitted by others
+   - View/send messages from/to other players and story NPC’s
+   - Travel to alien planets and interact with environment tools
+
 
 ## Screenshots
 
@@ -106,7 +123,8 @@ To run the app locally:
 
 ## Live Demo
 
-- [Live Demo](https://PROJECT-NAME.netlify.app/) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
+- [Client](https://hownottodie.onrender.com/)
+- [Server](https://hownottodiedemo.onrender.com) 
 
 ## Contributing
 
@@ -123,8 +141,10 @@ There are currently no automated tests for this project
 
 ## Documentation
 
-- [Project Repository](https://github.com/zomblic/HowNottoDie) **(UPDATE LINK IF NAME OF PROJECT CHANGES!!!!)**
-- [Second Project Respository](https://github.com/alexis-menendez/HowNotToDieDemo)
+> **Note:** The original repository ran out of free Git LFS space, so the project was migrated to a new team repository under a paid account with additional storage.
+
+- [Current Repository](https://github.com/HowNotToDieTeam/HowNotToDieDemo) 
+- [Original Repository](https://github.com/zomblic/HowNottoDie) 
 - [Walkthrough Video](https://drive.google.com/LINK/GOES/HERE) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
 - [Google Slides](https://docs.google.com/presentation/d/13Oqs7l09W7mch0W5Edy-X467CzWSoOtFeIJcjjSoi7U/edit?usp=sharing)
 - [Google Doc](https://docs.google.com/document/d/1lG3wGpQglw6aqWl2WG_FtDNSuud-BfDb08JUTFICkO8/edit?tab=t.0#heading=h.sp7vjy6pkvd4)
@@ -139,33 +159,28 @@ There are currently no automated tests for this project
 
 If you have any questions, feel free to contact the team:
 
-Alex Menendez
+Blake Brittain, Project Lead
+
+- **GitHub**: [Blakenb](https://github.com/Blakenb)
+- **Email**: Blakenb87@gmail.com
+
+Alex Menendez, Frontend Lead
 
 - **GitHub**: [alexis-menendez](https://github.com/alexis-menendez)
 - **Email**: alexis.menendez@austincc.edu
 
-Blake Brittain
+Constance Robin, Backend Lead
 
-- **GitHub**: [Blake Btittain](https://github.com/Blakenb)
-- **Email**: Blakenb87@gmail.com
-
-TEAM MEMBER 3
-
-- **GitHub**: [Constance](https://github.com/zomblic) 
+- **GitHub**: [zomblic](https://github.com/zomblic) 
 - **Email**: zomblic@hotmail.com 
 
-TEAM MEMBER 4
+Joeseph Goodwin, Frontend Developer
 
-- **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
+- **GitHub**: [Joseph-Goodwin001](https://github.com/Joseph-Goodwin001)
 - **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
 
-TEAM MEMBER 5
+TEAM MEMBER NAME, Backend Developer
 
-- **GitHub**: [TEAM-MEMBER](https://github.com/USERNAME) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
+- **GitHub**: [NFToonz](https://github.com/NFToonz) 
 - **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
-
-JoAnna Price
-
-- **GitHub**: [joanna-price](https://github.com/jo-price)
-- **Email**: joannagprice@gmail.com
 

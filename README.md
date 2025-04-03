@@ -186,7 +186,7 @@ Constance Robin, Backend Lead
 Joeseph Goodwin, Frontend Developer
 
 - **GitHub**: [Joseph-Goodwin001](https://github.com/Joseph-Goodwin001)
-- **Email**: N/A
+- **Email**: josephgoodwin001@gmail.com
 
 TEAM MEMBER NAME, Backend Developer
 

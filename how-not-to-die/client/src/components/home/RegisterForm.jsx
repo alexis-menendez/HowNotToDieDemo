@@ -13,7 +13,7 @@ const RegisterForm = () => {
   const navigate = useNavigate();
   const { login } = useContext(AuthContext);
 
-  const API_BASE_URL = "https://hownottodiedemo.onrender.com";
+  const VITE_BACKEND_URL = "https://hownottodiedemo.onrender.com";
   
   
   const handleSubmit = async (e) => {
@@ -31,13 +31,13 @@ const RegisterForm = () => {
     }
 
     try {
-      const response = await  fetch(`${API_BASE_URL}/auth/register`, {
+      const response = await  fetch(`${VITE_BACKEND_URL}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
       });
 
-      const text = await response.text();
+      const text = await response.json();
       console.log("Raw response from /auth/register:", text);
 
       let data;

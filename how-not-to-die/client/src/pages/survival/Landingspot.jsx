@@ -30,6 +30,7 @@ return (
           landingspot.map((landingspot, index) => (
             <li key={index} >
               <h2>{landingspot.name}</h2>
+              <p><strong>Planet:</strong>{landingspot.planet}</p>
                <p><strong>Flora:</strong> {landingspot.flora}</p>
               <p><strong>Fauna:</strong> {landingspot.fauna}</p>
               <p><strong>Description:</strong> {landingspot.description}</p>

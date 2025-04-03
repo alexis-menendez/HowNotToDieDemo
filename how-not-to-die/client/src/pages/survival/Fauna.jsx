@@ -25,12 +25,16 @@ const Fauna = () => {
  
  return (
      <div>
-       <h1>Recorded Wildlife Encounters</h1> {/* your original title references plants, but fauna is about animals/bugs. I moved the title that was here into Flora /Alexis */}
+       <h1>The Flowers and the Trees and... that thing with teeth</h1>
        <ul >
          {fauna.length > 0 ? (
            fauna.map((fauna, index) => (
              <li key={index} >
                <h2>{fauna.name}</h2>
+               <p><strong>Planet:</strong> {fauna.planet}</p>
+                <p><strong>How Many Teeth?:</strong> {fauna.teeth}</p>
+                <p><strong>How Many Claws?:</strong> {fauna.claws}</p>
+                <p><strong>What Do They Eat?:</strong> {fauna.eyes}</p>
                <p><strong>Description:</strong> {fauna.description}</p>
              </li>
            ))

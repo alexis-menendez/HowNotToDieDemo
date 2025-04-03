@@ -30,6 +30,8 @@ return (
           unexplained.map((unexplained, index) => (
             <li key={index} >
               <h2>{unexplained.name}</h2>
+              <p><strong>Planet:</strong>{unexplained.planet}</p>
+              <p><strong>Planet:</strong> {unexplained.planet}</p>
              <p><strong>Description:</strong> {unexplained.description}</p>
             </li>
           ))

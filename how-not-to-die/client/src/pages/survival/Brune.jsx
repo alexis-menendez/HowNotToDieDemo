@@ -31,7 +31,7 @@ return (
             <li key={index} >
               <h2>{planet.name}</h2>
                <p><strong>Hostility Level:</strong> {planet.hostility}</p>
-              <p><strong>Exploration Risk:</strong> {planet.explorationrisk}</p>
+              <p><strong>Exploration Risk:</strong> {planet.exploration}</p>
               <p><strong>Description:</strong> {planet.description}</p>
             </li>
           ))

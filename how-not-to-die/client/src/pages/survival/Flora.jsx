@@ -24,12 +24,16 @@ useEffect(() => {
 
 return (
     <div>
-      <h1>The Flowers and the Trees and... that thing with teeth</h1>
+      <h1>The Planets</h1>
       <ul >
       {flora.length > 0 ? (
            flora.map((flora, index) => (
              <li key={index} >
                <h2>{flora.name}</h2>
+                <p><strong>Planet:</strong> {flora.planet}</p>
+                <p><strong>Is there Teeth?:</strong> {flora.teeth}</p>
+                <p><strong>Lickability:</strong> {flora.lickability}</p>
+                <p><strong>What Do They Eat?:</strong> {flora.foo}</p>
                <p><strong>Description:</strong> {flora.description}</p>
              </li>
           ))

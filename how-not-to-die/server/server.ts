@@ -21,7 +21,7 @@ app.use('/auth', authRoutes);
 
 // === Sequelize Models ===
 
-class Planet extends Model {}
+class Planet extends Model { }
 Planet.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -38,7 +38,7 @@ Planet.init(
   }
 );
 
-class LandingSpot extends Model {}
+class LandingSpot extends Model { }
 LandingSpot.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -56,7 +56,7 @@ LandingSpot.init(
   }
 );
 
-class Flora extends Model {}
+class Flora extends Model { }
 Flora.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -72,7 +72,7 @@ Flora.init(
   }
 );
 
-class Fauna extends Model {}
+class Fauna extends Model { }
 Fauna.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -88,7 +88,7 @@ Fauna.init(
   }
 );
 
-class Unexplained extends Model {}
+class Unexplained extends Model { }
 Unexplained.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -104,7 +104,7 @@ Unexplained.init(
   }
 );
 
-class Users extends Model {}
+class Users extends Model { }
 Users.init(
   {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },

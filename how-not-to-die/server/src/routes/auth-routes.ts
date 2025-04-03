@@ -16,6 +16,7 @@ router.post('/register', async (req, res) => {
 
   try {
     const existingUser = await User.findOne({ where: { username } });
+    console.log('🔎 Checking for existing user:', !!existingUser);
 
     if (existingUser) {
       console.log('⚠️ Username already taken:', username);
@@ -26,6 +27,7 @@ router.post('/register', async (req, res) => {
       console.log('🔐 Hashed password:', hashedPassword);
 
       const newUser = await User.create({ username, password: hashedPassword });
+      console.log('📦 New user created with ID:', newUser.id);
 
       const token = generateToken(newUser.id);
       console.log('✅ Registration successful for:', username);
@@ -41,8 +43,6 @@ router.post('/register', async (req, res) => {
   res.status(status).json(response);
 });
 
-
-
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
   console.log('🔐 Login attempt for:', username);
@@ -52,6 +52,7 @@ router.post('/login', async (req, res) => {
 
   try {
     const user = await User.findOne({ where: { username } });
+    console.log('🔎 User lookup result:', !!user);
 
     if (!user) {
       console.log('❌ No user found with that username');
@@ -79,6 +80,5 @@ router.post('/login', async (req, res) => {
 
   res.status(status).json(response);
 });
-
 
 export default router;

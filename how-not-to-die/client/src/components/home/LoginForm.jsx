@@ -27,18 +27,19 @@ const LoginForm = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
       });
-
-      const data = await response.json();
-
+    
       if (!response.ok) {
-        throw new Error(data.message || 'Login failed');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Login failed');
       }
-
+    
+      const data = await response.json();
       login(data.user, data.token);
       navigate('/dashboard');
     } catch (err) {
-      setErrorMsg(err.message);
+      setErrorMsg(err.message || 'Something went wrong during login.');
     }
+    
   };
 
   return (

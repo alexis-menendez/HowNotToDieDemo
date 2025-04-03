@@ -46,7 +46,7 @@ const ShuttleBreak = () => {
 
       <div className={styles.veraBox}>
         {/* Replace static quote with animated VERA */}
-        <AnimatedVeraQuote quote="Ship status: semi-functional. You broke it. Again." />
+        <AnimatedVeraQuote quote="I told you not to go. Now the Interstellar Propulsion Matrix is completely nonfunctional. Shall I send a distress signal?" />
 
         <button className={styles.distressButton} onClick={handleDistressSignal}>
           Send Distress Signal

@@ -25,7 +25,7 @@ const Fauna = () => {
  
  return (
      <div>
-       <h1>The Flowers and the Trees and... that thing with teeth</h1>
+       <h1>Creatures and Animals</h1>
        <ul >
          {fauna.length > 0 ? (
            fauna.map((fauna, index) => (

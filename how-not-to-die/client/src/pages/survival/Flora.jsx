@@ -24,7 +24,7 @@ useEffect(() => {
 
 return (
     <div>
-      <h1>The Planets</h1>
+      <h1>Flowers, Plants and Things</h1>
       <ul >
       {flora.length > 0 ? (
            flora.map((flora, index) => (

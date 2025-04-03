@@ -24,7 +24,7 @@ useEffect(() => {
 
 return (
     <div>
-      <h1>The Unexplained Ends of...</h1>
+      <h1>The Unexplained Mysteries</h1>
       <ul >
         {unexplained.length > 0 ? (
           unexplained.map((unexplained, index) => (

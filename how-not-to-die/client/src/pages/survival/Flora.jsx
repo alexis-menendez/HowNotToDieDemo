@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import styles from '../../assets/css/survival-guide/SurvivalGuide.module.css';
 
 const Flora = () => {
 const navigate = useNavigate();

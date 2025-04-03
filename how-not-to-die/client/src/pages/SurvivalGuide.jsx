@@ -45,11 +45,11 @@ const SurvivalGuide = () => {
 
 
         <div className={styles.diagnosticRow}>
-          <button onClick={() => navigate('/flora')}>Not everything has thorns...</button>
+          <button onClick={() => navigate('/flora')}>Flora</button>
         </div>
 
         <div className={styles.diagnosticRow}>
-          <button onClick={() => navigate('/fauna')}>They have teef</button>
+          <button onClick={() => navigate('/fauna')}>Fauna</button>
         </div>
 
 

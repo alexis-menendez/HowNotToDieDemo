@@ -50,14 +50,14 @@ const Holomap = () => {
       {/* Clickable planets */}
       <button
         className={styles.planet}
-        style={{ top: '30%', left: '20%' }}
+        style={{ top: '30%', left: '21%' }}
         onClick={() => handlePlanetClick('planetone')}
       >
         Doubt {hasVisited('planetone') && '✅'}
       </button>
       <button
         className={styles.planet}
-        style={{ top: '50%', left: '45%' }}
+        style={{ top: '50%', left: '46%' }}
         onClick={() => handlePlanetClick('planettwo')}
       >
         Brune {hasVisited('planettwo') && '✅'}
@@ -65,7 +65,7 @@ const Holomap = () => {
       {isPlanetThreeUnlocked() && (
         <button
           className={styles.planet}
-          style={{ top: '70%', left: '75%' }}
+          style={{ top: '70%', left: '76%' }}
           onClick={() => handlePlanetClick('planethree')}
         >
           Ocean 12B {hasVisited('planethree') && '✅'}

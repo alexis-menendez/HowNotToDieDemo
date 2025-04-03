@@ -6,8 +6,7 @@ import React, { useEffect, useState } from 'react';
 const holomapQuotes = [
   "There are only a few planets in this system, but infinite ways to die. Choose wisely.",
   "Holomap projection active. Please try to avoid sending us into a worm hole this time.",
-  "Do you actually have a destination, or are we just clicking things at random?",
-  "Please remember: VERA is not responsible for reckless exploration decisions.",
+  "Do you actually have a destination, or are we just clicking things at random again?",
 ];
 
 const VeraHolomapQuote = () => {

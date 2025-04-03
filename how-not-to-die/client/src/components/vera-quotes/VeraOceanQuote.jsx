@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react';
 
 const quotes = [
   "Ocean 12B. No data, no land, and a ghost ship still crying out. Sounds like a great place for a swim, doesn't it?",
-  "Scanners picked up nothing. Except the screaming. But otherwise, very peaceful.",
-  "Ocean 12B. Bioluminescent. Beautiful. Potentially cursed. Proceed with existential caution.",
 ];
 
 const VeraOceanQuote = () => {

@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
     "build": "npx tsc",
-    "start": "npm run build && node dist/server.js", // for local dev
+    "start": "npm run build && node dist/server.js",
     "dev": "npx nodemon",
     "seed": "node dist/seeds/index.js",
     "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm run start"

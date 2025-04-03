@@ -1,7 +1,12 @@
-DROP DATABASE IF EXISTS how_not_to_die;
-CREATE DATABASE how_not_to_die;  
+DROP TABLE IF EXISTS planet CASCADE;
+DROP TABLE IF EXISTS landingspot CASCADE;
+DROP TABLE IF EXISTS flora CASCADE;
+DROP TABLE IF EXISTS fauna CASCADE;
+DROP TABLE IF EXISTS unexplained CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
-\c how_not_to_die
+-- Followed by your CREATE TABLE statements
+
 
 CREATE TABLE planet (
     id SERIAL PRIMARY KEY,

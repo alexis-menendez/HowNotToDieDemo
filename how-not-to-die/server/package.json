@@ -4,11 +4,11 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "build": "npx tsc",
-        "start": "npm run build && node dist/server.js",
-        "dev": "npx nodemon",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "seed": "node dist/seeds/index.js"
+    "build": "npx tsc",
+    "start": "npm run build && node dist/server.js", // for local dev
+    "dev": "npx nodemon",
+    "seed": "node dist/seeds/index.js",
+    "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm run start"
     },
     "dependencies": {
         "@types/helmet": "^0.0.48",

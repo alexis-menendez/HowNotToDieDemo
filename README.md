@@ -1,5 +1,7 @@
 # Project Name
 
+![projectscreenshot](https://github.com/user-attachments/assets/5802859f-20c6-4e7c-967c-5d6735b57fd6)
+
 ## **Description**
 
 **How Not To Die** is a full-stack, collaborative storytelling game disguised as a survival console for interstellar explorers. Built with React, Node.js, Express, and PostgreSQL, the app is designed to showcase real-time user interactivity, clean UI/UX, and narrative-driven data flow within a stylized space-console interface.
@@ -128,7 +130,7 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 
 ## Walkthrough Video
 
-- [Walkthrough Video](https://drive.google.com/LINK/GOES/HERE) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
+- currently unavailable
 
 ## Live Demo
 
@@ -154,15 +156,13 @@ There are currently no automated tests for this project
 
 - [Current Repository](https://github.com/HowNotToDieTeam/HowNotToDieDemo) 
 - [Original Repository](https://github.com/zomblic/HowNottoDie) 
-- [Walkthrough Video](https://drive.google.com/LINK/GOES/HERE) **(DO NOT FORGET TO ADD CORRRECT LINK HERE)**
 - [Google Slides](https://docs.google.com/presentation/d/13Oqs7l09W7mch0W5Edy-X467CzWSoOtFeIJcjjSoi7U/edit?usp=sharing)
 - [Google Doc](https://docs.google.com/document/d/1lG3wGpQglw6aqWl2WG_FtDNSuud-BfDb08JUTFICkO8/edit?tab=t.0#heading=h.sp7vjy6pkvd4)
 
 ## Acknowledgements
 
-1. **(ACKNOWLEDGEMENTS GO HERE)**
-2. **(ACKNOWLEDGEMENTS GO HERE)**
-3. **(ACKNOWLEDGEMENTS GO HERE)**
+1. Thomas Brittain
+2. Diego Mars
 
 ## Contact
 
@@ -191,5 +191,5 @@ Joeseph Goodwin, Frontend Developer
 TEAM MEMBER NAME, Backend Developer
 
 - **GitHub**: [NFToonz](https://github.com/NFToonz) 
-- **Email**: EMAIL@EMAIL.COM **(DO NOT FORGET TO ADD CORRRECT EMAIL HERE)**
+- **Email**:  Johnnyt3.2014@gmail.com
 

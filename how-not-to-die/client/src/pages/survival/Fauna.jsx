@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '../../assets/css/end-demo/ShipFunctions.module.css';
+import styles from '../../assets/css/survival-guide/SurvivalGuide.module.css';
 
 const Fauna = () => {
  const navigate = useNavigate();

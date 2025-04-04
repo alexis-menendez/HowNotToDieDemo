@@ -1,0 +1,43 @@
+{
+  "include": ["./**/*"],
+  "exclude": ["node_modules"],
+  "typeRoots": ["./node_modules/@types", "./src/types"],
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",
+
+    /* Modules */
+    "rootDir": "./",
+
+    /* Emit */
+    "outDir": "dist",
+    // "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    /* JavaScript Support */
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "checkJs": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": true 
+  }
+}

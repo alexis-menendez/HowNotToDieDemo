@@ -3,12 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "",
   "scripts": {
     "dev": "vite",
     "run": "vite",
     "build": "tsc && vite build",
+    "start": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm --prefix server run start",
+    "render-build": "git lfs pull && npm run install:all && npm run build",
+    "render-start": "npm run install:all && npm run start"
+
   },
   "dependencies": {
     "react": "^19.0.0",

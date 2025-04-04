@@ -8,7 +8,9 @@
     "start": "npm run build && node dist/server.js",
     "dev": "npx nodemon",
     "seed": "node dist/seeds/index.js",
-    "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm run start"
+    "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm --prefix server run start",
+    "render-build": "git lfs pull && npm run install:all && npm run build",
+    "render-start": "npm run install:all && npm run start"
     },
     "dependencies": {
         "@types/helmet": "^0.0.48",

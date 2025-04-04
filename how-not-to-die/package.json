@@ -1,14 +1,17 @@
 {
-    "name": "main",
-    "version": "1.0.0",
+    "name": "how-not-to-die",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
     "description": "",
-    "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
+      "clean": "rm -rf client/dist server/dist",
+      "postinstall": "git lfs pull",
 
-      "install": "cd server && npm i && cd ../client && npm i",
+      "install:all": "npm --prefix server install && npm --prefix client install",
       "build": "cd server && npm run build && cd ../client && npm run build",
-      "start": "npm run client:build && npm run server:build",
+      "start": "npm run build && concurrently \"npm run server:start\" \"npm run client:start\"",
       "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
 
       "server:start": "cd server && npm start",
@@ -19,11 +22,10 @@
       "client:start": "cd client && npm start",
       "client:build": "cd client && npm run build",
       "client:dev": "cd client && npm run dev",
-      "client:run": "cd client && npm run run",
       "client:lint": "cd client && npm run lint",
-      "client:preview": "cd client && npm run preview",
+
       "start:render": "psql \"$DATABASE_URL\" < server/db/create_schema.sql && psql \"$DATABASE_URL\" < server/db/seeds.sql && npm --prefix server run start",
-      "render-build": "npm run install:all && npm run build",
+      "render-build": "git lfs pull && npm run install:all && npm run build",
       "render-start": "npm run install:all && npm run start"
       
 

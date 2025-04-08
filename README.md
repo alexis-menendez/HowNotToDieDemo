@@ -61,7 +61,7 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 **2. Clone the Repository**
 
    - bash:
-     >  git clone https://github.com/your-repo/how-not-to-die-demo.git  
+     >  git clone https://github.com/alexis-menendez/how-not-to-die-demo.git  
      >  cd project-name  
 
 **3. Install Client Dependencies**

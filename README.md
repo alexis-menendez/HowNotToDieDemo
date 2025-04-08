@@ -124,7 +124,7 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 
 ## Screenshots
 
-- ![projectscreenshot](https://github.com/user-attachments/assets/5802859f-20c6-4e7c-967c-5d6735b57fd6)
+![projectscreenshot](https://github.com/user-attachments/assets/5802859f-20c6-4e7c-967c-5d6735b57fd6)
 
 ## Walkthrough Video
 

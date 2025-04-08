@@ -186,7 +186,7 @@ Joeseph Goodwin, Frontend Developer
 - **GitHub**: [Joseph-Goodwin001](https://github.com/Joseph-Goodwin001)
 - **Email**: josephgoodwin001@gmail.com
 
-TEAM MEMBER NAME, Backend Developer
+Johnny, Backend Developer
 
 - **GitHub**: [NFToonz](https://github.com/NFToonz) 
 - **Email**:  Johnnyt3.2014@gmail.com

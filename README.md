@@ -1,6 +1,4 @@
-# Project Name
-
-![projectscreenshot](https://github.com/user-attachments/assets/5802859f-20c6-4e7c-967c-5d6735b57fd6)
+# HOW NOT TO DIE
 
 ## **Description**
 
@@ -126,11 +124,11 @@ This app is deployed on Render and can be [accessed here.](https://hownottodie.o
 
 ## Screenshots
 
-- **INSERT SCREENSHOTS HERE ONCE UI IS COMPLETE**
+- ![projectscreenshot](https://github.com/user-attachments/assets/5802859f-20c6-4e7c-967c-5d6735b57fd6)
 
 ## Walkthrough Video
 
-- currently unavailable
+- Currently unavailable (Coming soon!)
 
 ## Live Demo
 

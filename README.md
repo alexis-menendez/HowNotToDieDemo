@@ -166,27 +166,29 @@ There are currently no automated tests for this project
 
 If you have any questions, feel free to contact the team:
 
-Blake Brittain, Project Lead
+**Project Lead:** **Blake Brittain**
 
 - **GitHub**: [Blakenb](https://github.com/Blakenb)
 - **Email**: Blakenb87@gmail.com
 
-Alex Menendez, Frontend Lead
+**Frontend Lead, Documentation Manager:** [**Alex Menendez**](https://alex-menendez.onrender.com/) – Junior Developer, Junior Project Manager, Junior UI/UX Designer
 
+- [**Portfolio**](https://alex-menendez.onrender.com/)
+- **LinkedIn**: [in/alex-d-menendez](https://www.linkedin.com/in/alex-d-menendez/)
 - **GitHub**: [alexis-menendez](https://github.com/alexis-menendez)
-- **Email**: alexis.menendez@austincc.edu
+- **Email**: [alexis.menendez@austincc.edu](https://alex-menendez.onrender.com/contact)
 
-Constance Robin, Backend Lead
+**Backend Lead:** **Constance Robin**
 
 - **GitHub**: [zomblic](https://github.com/zomblic) 
 - **Email**: zomblic@hotmail.com 
 
-Joeseph Goodwin, Frontend Developer
+**Frontend Developer:** Joeseph Goodwin
 
 - **GitHub**: [Joseph-Goodwin001](https://github.com/Joseph-Goodwin001)
 - **Email**: josephgoodwin001@gmail.com
 
-Johnny, Backend Developer
+**Backend Developer:** Johnny
 
 - **GitHub**: [NFToonz](https://github.com/NFToonz) 
 - **Email**:  Johnnyt3.2014@gmail.com
